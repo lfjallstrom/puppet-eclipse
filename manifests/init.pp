@@ -45,6 +45,7 @@ define eclipse(
 			path=> $eclipse::params::execlaunchpaths,
 			creates=>$wgetcreates,
 			logoutput=> on_failure,
+			timeout=>0,
 			#require=>file["installersdirectory"]
 		}
 	
